@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import SideBar from "@/components/SideBar";
 
 export const metadata: Metadata = {
     title: "Godwin's Portfolio",
@@ -15,10 +14,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className="bg-zinc-800 text-white">
-                <SideBar />
-                {children}
-            </body>
+            <body className="text-white">{children}</body>
         </html>
     );
 }

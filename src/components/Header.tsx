@@ -7,7 +7,6 @@ const Header = () => {
             <h1 className="font-bold">Godwin</h1>
             <ul className="hidden sm:block">
                 <li className="gap-x-6 flex">
-                    <Link href={"/"}>Home</Link>
                     <Link href={"about"}>About</Link>
                     <Link href={"contact"}>Contact</Link>
                 </li>
