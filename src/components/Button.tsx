@@ -6,17 +6,23 @@ const Button: FC<ButtonProps> = ({
     onClick,
     type,
     className,
-    width = "",
     disabled,
+    icon,
 }) => {
     return (
         <button
             type={type}
             onClick={onClick}
             disabled={disabled}
-            className={`px-5 py-3 bg-blue-600 rounded-lg ${className} ${width} hover:bg-blue-500 disabled:opacity-50`}
+            className={`px-5 py-3 ${className} disabled:opacity-50`}
         >
-            {name}
+            {icon ? (
+                <p className="flex justify-center items-center gap-2">
+                    {icon} <span>{name}</span>
+                </p>
+            ) : (
+                <span>{name}</span>
+            )}
         </button>
     );
 };

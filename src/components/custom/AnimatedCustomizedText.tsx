@@ -5,9 +5,9 @@ function AnimatedCustomizedText() {
     const [currentPhrase, setCurrentPhrase] = useState(0);
     const [opacityValue, setOpacityValue] = useState(1);
     const Phrases = [
-        "Godwin Emeribe",
-        "a frontend developer",
-        "a lover of chess",
+        "Hi. I am Godwin Emeribe",
+        "A passionate frontend developer",
+        "A lover of chess",
     ];
 
     useEffect(() => {
@@ -30,10 +30,10 @@ function AnimatedCustomizedText() {
     return (
         <div className="container w-[100%]">
             <p
-                className={`text text-3xl text-red-500`}
+                className={`text-red-500 text-6xl tracking-wide sm:tracking-tighter`}
                 style={{ opacity: `${opacityValue}` }}
             >
-                I am {Phrases[currentPhrase]}
+                {Phrases[currentPhrase]}
             </p>
         </div>
     );

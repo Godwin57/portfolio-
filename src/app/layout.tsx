@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+import SideBar from "@/components/SideBar";
 import "./globals.css";
+import Header from "@/components/Header";
 
 export const metadata: Metadata = {
     title: "Godwin's Portfolio",
@@ -14,7 +16,13 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className="text-white">{children}</body>
+            <body className="bg-zinc-800 min-h-[100vh] text-white sm:grid Homepage-grid">
+                <SideBar />
+                <main className="px-10">
+                    <Header />
+                    {children}
+                </main>
+            </body>
         </html>
     );
 }
