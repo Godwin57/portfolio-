@@ -5,12 +5,12 @@ import Image from "next/image";
 
 const page = () => {
     return (
-        <section className="flex justify-around">
+        <section className="flex min-h-[80vh] justify-around Contact-background-pic sm:bg-none sm:bg-transparent">
             <div className="space-y-5">
-                <h1 className="text-6xl tracking-tighter sm:tracking-normal">
+                <h1 className="text-6xl tracking-tighter sm:tracking-normal text-red-500">
                     Contact me
                 </h1>
-                <p>
+                <p className="text-xl">
                     Copy my email address and send me an email, for freelance,
                     collaborations and gigs
                 </p>

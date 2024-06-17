@@ -1,23 +1,28 @@
 "use client";
+import { SideBarContext } from "@/context/SideBarProvider";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect } from "react";
+import { useContext } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { MdCancel } from "react-icons/md";
 
 const Header = () => {
     const currentPath = usePathname();
+    const { isOpen, setIsOpen } = useContext(SideBarContext);
 
     return (
-        <header className="flex justify-between py-4 mb-10">
+        <header className="flex justify-between py-4 mb-10 px-10">
             <h1 className="font-bold text-2xl cursor-pointer">Godwin</h1>
-            <ul className="hidden sm:block">
-                <li className="gap-x-6 flex">
+            <ul className="hidden sm:flex gap-x-6">
+                <li>
                     <Link
                         href={"/"}
                         className={` ${currentPath === "/" && "text-red-500"} `}
                     >
                         Home
                     </Link>
+                </li>
+                <li>
                     <Link
                         href={"about"}
                         className={` ${
@@ -26,6 +31,8 @@ const Header = () => {
                     >
                         About
                     </Link>
+                </li>
+                <li>
                     <Link
                         href={"contact"}
                         className={` ${
@@ -36,7 +43,14 @@ const Header = () => {
                     </Link>
                 </li>
             </ul>
-            <GiHamburgerMenu className="sm:hidden font-bold text-2xl cursor-pointer" />
+            {!isOpen && (
+                <GiHamburgerMenu
+                    className="sm:hidden font-bold text-2xl cursor-pointer"
+                    onClick={() => {
+                        setIsOpen(() => true);
+                    }}
+                />
+            )}
         </header>
     );
 };

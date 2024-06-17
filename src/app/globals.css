@@ -6,3 +6,33 @@
     grid-template-columns: 60px 1fr;
     grid-template-rows: 1fr;
 }
+
+.Contact-background-pic {
+    background-image: url("../../public/Godwin-aiPic3.png");
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.About-background-pic {
+    background-image: url("../../public/Godwin-aiPic3.png");
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.Home-background-pic {
+    background-image: url("../../public/Godwin-aiPic3.png");
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.border-circle {
+    border-radius: 100%;
+}
+
+.Mobile-Sidebar {
+    background: rgba(58, 58, 64, 0.507);
+    animation: slide-in 2s;
+}
+
+@keyframes slide-in {
+    from {
+        margin-right: -100px;
+    }
+}

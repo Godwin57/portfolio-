@@ -10,7 +10,7 @@ const page = () => {
                 alt="An AI generated picture of Godwin Emeribe"
                 height={300}
                 width={400}
-                className="hidden sm:block"
+                className="hidden sm:block border-4 border-red-500 border-circle"
             />
             <div className="sm:w-[50%] flex flex-col gap-10">
                 <div>
