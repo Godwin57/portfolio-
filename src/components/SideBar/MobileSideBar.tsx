@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { SideBarContext } from "@/context/SideBarProvider";
-import { useContext } from "react";
+import { MouseEvent, useContext, useEffect, useRef } from "react";
 import { MdCancel } from "react-icons/md";
 import { usePathname } from "next/navigation";
 import URLarr from "@/constants/urls";
@@ -9,11 +9,36 @@ import URLarr from "@/constants/urls";
 const MobileSideBar = () => {
     const { isOpen, setIsOpen } = useContext(SideBarContext);
     const currentPath = usePathname();
+    const mobileSideBarRef = useRef(null);
+
+    const handleWindowClick = (event: globalThis.MouseEvent) => {
+        if (
+            mobileSideBarRef?.current &&
+            !mobileSideBarRef.current.contains(event.target)
+        ) {
+            console.log("I've been Clicked");
+            setIsOpen(() => false);
+        }
+    };
+
+    useEffect(() => {
+        if (isOpen) {
+            document.addEventListener("mousedown", handleWindowClick);
+        } else {
+            document.removeEventListener("mousedown", handleWindowClick);
+        }
+
+        return () =>
+            document.removeEventListener("mousedown", handleWindowClick);
+    }, [isOpen]);
 
     return (
         <aside className="">
             {isOpen && (
-                <div className="absolute right-0 top-0 p-5  min-h-[100vh] font-bold flex flex-col items-center gap-[10vh] Mobile-Sidebar">
+                <div
+                    ref={mobileSideBarRef}
+                    className="absolute right-0 top-0 p-5  min-h-[100vh] font-bold flex flex-col items-center gap-[10vh] Mobile-Sidebar"
+                >
                     <MdCancel
                         className="sm:hidden font-bold text-2xl cursor-pointer"
                         onClick={() => {

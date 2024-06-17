@@ -18,8 +18,8 @@ const page = () => {
                     <p className="font-bold text-2xl sm:text-xl mt-3">
                         Hi. I&apos;m Godwin.{" "}
                         <span className="text-red-500">
-                            A frontend developer, in love with accessible
-                            websites
+                            A frontend developer, in love with crafting
+                            accessible websites
                         </span>
                     </p>
                 </div>
@@ -43,7 +43,7 @@ const page = () => {
                     <p>
                         I enjoy writing code to develop and convert figma
                         designs &apos;pixel-perfectly&apos; into websites that
-                        solve real world problems.
+                        solves real world problems.
                     </p>
                     <p>
                         Apart from writing codes, I play guitar and chess in my
