@@ -14,7 +14,9 @@ const page = () => {
             />
             <div className="sm:w-[50%] flex flex-col gap-10">
                 <div>
-                    <h1 className="text-6xl sm:text-8xl">About me</h1>
+                    <h1 className="text-6xl sm:text-8xl tracking-tighter">
+                        About me
+                    </h1>
                     <p className="font-bold text-2xl sm:text-xl mt-3">
                         Hi. I&apos;m Godwin.{" "}
                         <span className="text-red-500">

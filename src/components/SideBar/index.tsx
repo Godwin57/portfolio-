@@ -9,16 +9,14 @@ const SideBar = () => {
         >
             <ul className="mt-10 flex flex-col px-4 py-4 justify-center items-center gap-[30vh]">
                 {URLarr.map(({ name, icon, link }) => (
-                    <li key={name}>
-                        <Link href={`${link}`}>
-                            <span
-                                className="text-3xl"
-                                aria-label={`${name} icon`}
-                            >
-                                {icon}
-                            </span>
-                        </Link>
-                    </li>
+                    <a
+                        href={`${link}`}
+                        className="text-3xl"
+                        aria-label={`${name} icon`}
+                        key={name}
+                    >
+                        {icon}
+                    </a>
                 ))}
             </ul>
         </aside>

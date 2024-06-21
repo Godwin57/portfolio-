@@ -5,17 +5,17 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 const URLarr: URLarrTypes[] = [
     {
         name: "Github",
-        link: "github.com",
+        link: "https://github.com",
         icon: <FaGithub />,
     },
     {
         name: "Twitter",
-        link: "x.com",
+        link: "https://x.com",
         icon: <FaSquareXTwitter />,
     },
     {
         name: "LinkedIn",
-        link: "linkedin.com",
+        link: "https://linkedin.com",
         icon: <FaLinkedinIn />,
     },
 ];

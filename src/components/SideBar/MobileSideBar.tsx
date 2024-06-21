@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { SideBarContext } from "@/context/SideBarProvider";
-import { MouseEvent, useContext, useEffect, useRef } from "react";
+import { useContext, useEffect, useRef } from "react";
 import { MdCancel } from "react-icons/md";
 import { usePathname } from "next/navigation";
 import URLarr from "@/constants/urls";
@@ -16,7 +16,6 @@ const MobileSideBar = () => {
             mobileSideBarRef?.current &&
             !mobileSideBarRef.current.contains(event.target)
         ) {
-            console.log("I've been Clicked");
             setIsOpen(() => false);
         }
     };
@@ -79,16 +78,14 @@ const MobileSideBar = () => {
                     </ul>
                     <ul className="flex flex-col gap-[10vh]">
                         {URLarr.map(({ name, icon, link }) => (
-                            <li key={name}>
-                                <Link href={`${link}`}>
-                                    <span
-                                        className="text-3xl"
-                                        aria-label={`${name} icon`}
-                                    >
-                                        {icon}
-                                    </span>
-                                </Link>
-                            </li>
+                            <a
+                                href={`${link}`}
+                                className="text-3xl"
+                                aria-label={`${name} icon`}
+                                key={name}
+                            >
+                                {icon}
+                            </a>
                         ))}
                     </ul>
                 </div>
