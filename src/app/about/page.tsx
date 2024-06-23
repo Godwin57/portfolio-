@@ -12,7 +12,7 @@ const page = () => {
                 width={400}
                 className="hidden sm:block border-4 border-red-500 border-circle"
             />
-            <div className="sm:w-[50%] flex flex-col gap-10">
+            <div className="sm:w-[50%] flex flex-col gap-10 animate-div">
                 <div>
                     <h1 className="text-6xl sm:text-8xl tracking-tighter">
                         About me
@@ -26,17 +26,6 @@ const page = () => {
                     </p>
                 </div>
                 <div className="text-xl sm:text-sm space-y-3">
-                    {/* Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Cum blanditiis necessitatibus ea dolorem pariatur molestias
-                    nam, rerum, eum, vero esse dicta ullam voluptatibus beatae
-                    dolores neque deleniti. Error, excepturi neque alias soluta
-                    quo itaque eaque placeat assumenda mollitia eos vitae
-                    explicabo recusandae modi nam vel, fugiat harum, in
-                    voluptate atque sunt ipsa? Aliquam asperiores doloribus
-                    impedit pariatur esse cupiditate. Rerum dolorum laborum
-                    repellat temporibus necessitatibus reiciendis aliquid culpa
-                    exercitationem, adipisci repellendus tempore vero aspernatur
-                    eaque non neque accusantium amet fuga! */}
                     <p>
                         Hi there! I&apos;m Godwin, a frontend web developer and
                         a music lover from Africa with about 2-3 years of

@@ -5,8 +5,8 @@ import Image from "next/image";
 
 const page = () => {
     return (
-        <section className="flex min-h-[80vh] justify-around Contact-background-pic sm:bg-none sm:bg-transparent">
-            <div className="space-y-5">
+        <section className="flex min-h-[80vh] justify-around sm:bg-none sm:bg-transparent">
+            <div className="space-y-5 animate-div">
                 <h1 className="text-6xl tracking-tighter sm:tracking-normal text-red-500">
                     Contact me
                 </h1>

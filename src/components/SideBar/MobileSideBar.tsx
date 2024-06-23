@@ -29,6 +29,7 @@ const MobileSideBar = () => {
 
         return () =>
             document.removeEventListener("mousedown", handleWindowClick);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [isOpen]);
 
     return (

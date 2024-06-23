@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import pic from "../../public/Godwin-aiPic3.png";
-import AnimatedCustomizedText from "@/components/custom/AnimatedCustomizedText";
 import Button from "@/components/Button";
 import { FaDownload } from "react-icons/fa";
 
@@ -11,8 +10,7 @@ export default function Home() {
             aria-label="A little about me"
             className="flex justify-between"
         >
-            <div className="flex flex-col gap-20 sm:text-left sm:w-[60%]">
-                {/* <AnimatedCustomizedText /> */}
+            <div className="flex flex-col gap-20 sm:text-left sm:w-[60%] animate-div">
                 <h1 className={`text-red-500 text-6xl tracking-tighter`}>
                     Hi there. I&apos;m Godwin Emeribe
                 </h1>
