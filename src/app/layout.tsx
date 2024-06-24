@@ -18,9 +18,10 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className="bg-zinc-800 min-h-[100vh] text-white sm:grid Homepage-grid">
+            <body className="min-h-[100vh] text-white sm:grid Homepage-grid">
                 <SideBar />
-                <main className="px-10 relative">
+                <main className="px-10 relative Layout-background-pic">
+                    <div className="children-overlay"></div>
                     <SideBarProvider>
                         <>
                             <Header />

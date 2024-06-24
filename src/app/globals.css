@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,18 +11,18 @@
 }
 
 .Layout-background-pic {
-    /* Remove the below background image */
-    background-image: url("../../public/Godwin-aiPic3.png");
+    background-image: url("../../public/animated-coding-pic3.gif");
     background-repeat: no-repeat;
-    background-color: rgba(0, 0, 0, 0.5);
     background-size: cover;
+    z-index: 1;
+    position: relative;
 }
 .border-circle {
     border-radius: 100%;
 }
 
 .Mobile-Sidebar {
-    background: rgba(58, 58, 64, 0.507);
+    background-color: rgb(37, 46, 54);
     animation: slide-in 2s;
 }
 
@@ -27,6 +30,21 @@
     from {
         margin-right: -100px;
     }
+}
+
+.children-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(47, 58, 68, 0.932);
+    content: "";
+    z-index: -1;
+}
+
+body {
+    background-color: rgba(47, 58, 68);
 }
 
 .animate-div {
@@ -40,4 +58,8 @@
         margin-left: -100vw;
         opacity: 0;
     }
+}
+
+.layout-bg {
+    background-color: rgb(39, 49, 69);
 }

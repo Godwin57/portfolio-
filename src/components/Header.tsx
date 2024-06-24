@@ -11,7 +11,7 @@ const Header = () => {
     const { isOpen, setIsOpen } = useContext(SideBarContext);
 
     return (
-        <header className="flex justify-between py-4 mb-10">
+        <header className="flex justify-between py-4 mb-10 font-Merriweather italic">
             <h1 className="font-bold text-2xl cursor-pointer">Godwin</h1>
             <ul className="hidden sm:flex gap-x-6">
                 <li>

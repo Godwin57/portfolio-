@@ -8,8 +8,9 @@ const config: Config = {
     ],
     theme: {
         extend: {
-            backgroundImage: {
-                "Homepage-bg": "url('/public/Godwin-aiPic3.png)",
+            fontFamily: {
+                Oswald: ["Oswald", "sans-serif"],
+                Merriweather: ["Merriweather", "serif"],
             },
         },
     },

@@ -4,17 +4,17 @@ import Link from "next/link";
 
 const page = () => {
     return (
-        <section className="sm:flex justify-center sm:gap-10 pb-10 sm:pb-0">
+        <section className="sm:flex justify-center pb-10 sm:pb-0 flex-col sm:flex-row gap-10 space-y-10 sm:space-y-0">
             <Image
                 src={pic}
                 alt="An AI generated picture of Godwin Emeribe"
                 height={300}
                 width={400}
-                className="hidden sm:block border-4 border-red-500 border-circle"
+                className="border-4 border-red-500 border-circle"
             />
             <div className="sm:w-[50%] flex flex-col gap-10 animate-div">
                 <div>
-                    <h1 className="text-6xl sm:text-8xl tracking-tighter">
+                    <h1 className="text-6xl sm:text-8xl tracking-tighter font-Oswald italic">
                         About me
                     </h1>
                     <p className="font-bold text-2xl sm:text-xl mt-3">

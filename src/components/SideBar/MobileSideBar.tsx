@@ -33,11 +33,11 @@ const MobileSideBar = () => {
     }, [isOpen]);
 
     return (
-        <aside className="">
+        <aside className="font-Oswald">
             {isOpen && (
                 <div
                     ref={mobileSideBarRef}
-                    className="absolute right-0 top-0 p-5  min-h-[100vh] font-bold flex flex-col items-center gap-[10vh] Mobile-Sidebar"
+                    className="absolute right-0 top-0 p-5  min-h-[100vh] h-[100%] flex flex-col tracking-wide items-center gap-[10vh] Mobile-Sidebar"
                 >
                     <MdCancel
                         className="sm:hidden font-bold text-2xl cursor-pointer"

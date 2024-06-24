@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import pic from "../../public/Godwin-aiPic3.png";
+import pic from "../../public/animated-coding-pic4.gif";
 import Button from "@/components/Button";
 import { FaDownload } from "react-icons/fa";
 
@@ -11,7 +11,7 @@ export default function Home() {
             className="flex justify-between"
         >
             <div className="flex flex-col gap-20 sm:text-left sm:w-[60%] animate-div">
-                <h1 className={`text-red-500 text-6xl tracking-tighter`}>
+                <h1 className="text-red-500 text-6xl tracking-tighter font-Oswald italic">
                     Hi there. I&apos;m Godwin Emeribe
                 </h1>
 
@@ -30,10 +30,11 @@ export default function Home() {
             </div>
             <Image
                 src={pic}
-                alt="An AI generated picture of Godwin Emeribe"
-                height={300}
-                width={400}
-                className="hidden sm:block"
+                alt="An animated coding picture"
+                height={600}
+                width={500}
+                className="hidden sm:block rounded-xl"
+                unoptimized
             />
         </section>
     );
