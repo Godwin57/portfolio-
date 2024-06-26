@@ -4,7 +4,10 @@ import Link from "next/link";
 
 const page = () => {
     return (
-        <section className="sm:flex justify-center pb-10 sm:pb-0 flex-col sm:flex-row gap-10 space-y-10 sm:space-y-0">
+        <section
+            className="sm:flex justify-center pb-10 sm:pb-0 flex-col sm:flex-row gap-10 space-y-10 sm:space-y-0"
+            aria-label="A little about Godwin"
+        >
             <Image
                 src={pic}
                 alt="An AI generated picture of Godwin Emeribe"

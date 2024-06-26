@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import SideBarProvider from "@/context/SideBarProvider";
 import MobileSideBar from "@/components/SideBar/MobileSideBar";
+import pic from "../../public/animated-coding-pic3.gif";
 
 export const metadata: Metadata = {
     title: "Godwin's Portfolio",
@@ -20,7 +21,15 @@ export default function RootLayout({
         <html lang="en">
             <body className="min-h-[100vh] text-white sm:grid Homepage-grid">
                 <SideBar />
-                <main className="px-10 relative Layout-background-pic">
+                <main
+                    className="px-10 relative"
+                    style={{
+                        backgroundImage: `url(${pic.src})`,
+                        backgroundRepeat: "no-repeat",
+                        backgroundSize: "cover",
+                        zIndex: "1",
+                    }}
+                >
                     <div className="children-overlay"></div>
                     <SideBarProvider>
                         <>
@@ -28,7 +37,7 @@ export default function RootLayout({
                             <MobileSideBar />
                         </>
                     </SideBarProvider>
-                    {children}
+                    <div className="mt-10">{children}</div>
                 </main>
             </body>
         </html>

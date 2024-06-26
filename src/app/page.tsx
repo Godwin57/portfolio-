@@ -7,8 +7,8 @@ import { FaDownload } from "react-icons/fa";
 export default function Home() {
     return (
         <section
-            aria-label="A little about me"
-            className="flex justify-between"
+            aria-label="Portfolio homepage"
+            className="flex justify-between min-h-[100vh] sm:min-h-fit"
         >
             <div className="flex flex-col gap-20 sm:text-left sm:w-[60%] animate-div">
                 <h1 className="text-red-500 text-6xl tracking-tighter font-Oswald italic">

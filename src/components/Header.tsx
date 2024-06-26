@@ -4,14 +4,13 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useContext } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { MdCancel } from "react-icons/md";
 
 const Header = () => {
     const currentPath = usePathname();
     const { isOpen, setIsOpen } = useContext(SideBarContext);
 
     return (
-        <header className="flex justify-between py-4 mb-10 font-Merriweather italic">
+        <header className="flex justify-between py-4 font-Merriweather italic">
             <h1 className="font-bold text-2xl cursor-pointer">Godwin</h1>
             <ul className="hidden sm:flex gap-x-6">
                 <li>
