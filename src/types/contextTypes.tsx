@@ -1,6 +1,6 @@
-import { Dispatch, SetStateAction } from "react";
+import { SetStateAction } from "react";
 
 export interface SideBarContextType {
     isOpen: Boolean;
-    setIsOpen: Dispatch<SetStateAction<boolean>>;
+    setIsOpen: (value: SetStateAction<boolean>) => void;
 }
