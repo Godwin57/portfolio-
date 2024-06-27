@@ -11,6 +11,7 @@ const config: Config = {
             fontFamily: {
                 Oswald: ["Oswald", "sans-serif"],
                 Merriweather: ["Merriweather", "serif"],
+                Poppins: ["Poppins, sans-serif"],
             },
         },
     },

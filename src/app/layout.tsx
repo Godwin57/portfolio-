@@ -4,7 +4,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import SideBarProvider from "@/context/SideBarProvider";
 import MobileSideBar from "@/components/SideBar/MobileSideBar";
-import pic from "../../public/animated-coding-pic3.gif";
+import pic from "../../public/images/animated-coding-pic3.gif";
 
 export const metadata: Metadata = {
     title: "Godwin's Portfolio",
@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className="min-h-[100vh] text-white sm:grid Homepage-grid">
+            <body className="min-h-[100vh] text-white sm:grid Homepage-grid font-Poppins">
                 <SideBar />
                 <main
                     className="px-10 relative"

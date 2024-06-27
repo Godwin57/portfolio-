@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import pic from "../../public/animated-coding-pic4.gif";
+import pic from "../../public/images/animated-coding-pic4.gif";
 import Button from "@/components/Button";
 import { FaDownload } from "react-icons/fa";
 

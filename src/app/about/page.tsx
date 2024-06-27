@@ -1,5 +1,5 @@
 import Image from "next/image";
-import pic from "../../../public/Godwin-aiPic3.png";
+import pic from "../../../public/images/profile.png";
 import Link from "next/link";
 
 const page = () => {
