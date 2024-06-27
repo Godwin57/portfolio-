@@ -8,10 +8,10 @@ export default function Home() {
     return (
         <section
             aria-label="Portfolio homepage"
-            className="flex justify-between min-h-[100vh] sm:min-h-fit"
+            className="min-h-[100vh] sm:min-h-fit px-10"
         >
-            <div className="flex flex-col gap-20 sm:text-left sm:w-[60%] animate-div">
-                <h1 className="text-red-500 text-6xl tracking-tighter font-Oswald italic">
+            <div className="flex flex-col gap-14 sm:text-left sm:w-[60%] animate-div">
+                <h1 className="text-red-500 text-4xl sm:text-6xl font-Oswald italic">
                     Hi there. I&apos;m Godwin Emeribe
                 </h1>
 

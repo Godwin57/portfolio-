@@ -5,7 +5,7 @@ import Link from "next/link";
 const page = () => {
     return (
         <section
-            className="sm:flex justify-center pb-10 sm:pb-0 flex-col sm:flex-row gap-10 space-y-10 sm:space-y-0"
+            className="sm:flex justify-center pb-10 sm:pb-0 flex-col sm:flex-row gap-10 space-y-10 sm:space-y-0 px-10"
             aria-label="A little about Godwin"
         >
             <Image
@@ -16,7 +16,7 @@ const page = () => {
                 className="border-4 border-red-500 border-circle"
             />
             <div className="sm:w-[50%] flex flex-col gap-10 animate-div">
-                <div>
+                <div className="flex flex-col gap-4">
                     <h1 className="text-6xl sm:text-8xl tracking-tighter font-Oswald italic">
                         About me
                     </h1>

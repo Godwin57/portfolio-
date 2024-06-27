@@ -22,7 +22,7 @@ export default function RootLayout({
             <body className="min-h-[100vh] text-white sm:grid Homepage-grid font-Poppins">
                 <SideBar />
                 <main
-                    className="px-10 relative"
+                    className="relative"
                     style={{
                         backgroundImage: `url(${pic.src})`,
                         backgroundRepeat: "no-repeat",

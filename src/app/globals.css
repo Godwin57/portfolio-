@@ -17,7 +17,7 @@
 
 .Mobile-Sidebar {
     background-color: rgba(37, 46, 54, 0.7);
-    animation: slide-in 2s;
+    animation: slide-in 0.5s;
 }
 
 @keyframes slide-in {
