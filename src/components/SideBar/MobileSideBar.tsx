@@ -9,12 +9,12 @@ import URLarr from "@/constants/urls";
 const MobileSideBar = () => {
     const { isOpen, setIsOpen } = useContext(SideBarContext);
     const currentPath = usePathname();
-    const mobileSideBarRef = useRef(null);
+    const mobileSideBarRef = useRef<HTMLDivElement | null>(null);
 
     const handleWindowClick = (event: globalThis.MouseEvent) => {
         if (
             mobileSideBarRef?.current &&
-            !mobileSideBarRef.current.contains(event.target)
+            !mobileSideBarRef.current.contains(event.target as Node)
         ) {
             setIsOpen(() => false);
         }
