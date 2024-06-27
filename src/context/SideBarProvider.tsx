@@ -1,12 +1,13 @@
 "use client";
-import { createContext, useState } from "react";
+import { createContext, SetStateAction, useState } from "react";
 import { SideBarContextType } from "@/types/contextTypes";
 
-export const SideBarContext = createContext<SideBarContextType>({});
-// export const SideBarContext = createContext<SideBarContextType>({
-//     isOpen: false,
-//     setIsOpen:(prevState: boolean) => void
-// });
+export const SideBarContext = createContext<SideBarContextType>({
+    isOpen: false,
+    setIsOpen: function (value: SetStateAction<boolean>): void {
+        throw new Error("Function not implemented.");
+    },
+});
 
 const SideBarProvider = ({ children }: { children: JSX.Element }) => {
     const [isOpen, setIsOpen] = useState(false);
