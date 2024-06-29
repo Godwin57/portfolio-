@@ -20,7 +20,9 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body className="min-h-[100vh] text-white sm:grid Homepage-grid font-Poppins">
-                <SideBar />
+                <div className="relative">
+                    <SideBar />
+                </div>
                 <main
                     className="relative"
                     style={{

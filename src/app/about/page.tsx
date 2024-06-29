@@ -13,11 +13,11 @@ const page = () => {
                 alt="An AI generated picture of Godwin Emeribe"
                 height={300}
                 width={400}
-                className="border-4 border-red-500 border-circle"
+                className="border-4 border-red-500 border-circle mx-auto sm:mx-0"
             />
-            <div className="sm:w-[50%] flex flex-col gap-10 animate-div">
+            <div className="sm:w-[50%] flex flex-col gap-10 animate-div  mx-auto sm:mx-0">
                 <div className="flex flex-col gap-4">
-                    <h1 className="text-6xl sm:text-8xl tracking-tighter font-Oswald italic">
+                    <h1 className="text-6xl sm:text-8xl tracking-tighter text-center sm:text-left font-Oswald italic">
                         About me
                     </h1>
                     <p className="font-bold text-2xl sm:text-xl mt-3">

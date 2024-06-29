@@ -5,7 +5,7 @@ const SideBar = () => {
     return (
         <aside
             aria-label="Useful Links"
-            className="hidden sm:block h-[100vh] w-[60px] sideBar-bg"
+            className="hidden sm:block h-[100vh] w-[60px] sideBar-bg fixed top-0 left-0"
         >
             <ul className="mt-10 flex flex-col px-4 py-4 justify-center items-center gap-[30vh]">
                 {URLarr.map(({ name, icon, link }) => (
