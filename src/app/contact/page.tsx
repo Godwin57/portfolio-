@@ -12,7 +12,7 @@ const page = () => {
                     Copy my email address and send me an email. I&apos;m
                     currently available for freelance, collaborations and gigs
                 </p>
-                <div className="flex items-center justify-center">
+                <div className="flex items-center justify-center sm:block">
                     <CopyToClipboard
                         copyValue="godwinemeribe23@gmail.com"
                         className=""
